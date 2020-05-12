@@ -37,7 +37,7 @@ Docker
   
 6.前端的架构是：Node.js+Vue.js+element-ui+Nuxt+Echarts
 
-7.其它设计到的中间件包括Redis、ActiceMQ、阿里云OSS、视频点播，后台中使用了ECharts做图表的展现，使用POI完成了课程分类批量添加，分布式使用了
+7.其它设计到的中间件包括Redis、ActiveMQ、阿里云OSS、视频点播，后台中使用了ECharts做图表的展现，使用POI完成了课程分类批量添加，分布式使用了
   单点登录使用了JWT，还使用了微信登录。
 
 
