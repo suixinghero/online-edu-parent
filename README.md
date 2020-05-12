@@ -26,7 +26,8 @@
   
   online-edu-statistics:网站统计日数据相关的模块
   
-  前台地址：http://49.234.117.202/或www.suixinghero.cn
+  前台地址：http://49.234.117.202  或  www.suixinghero.cn
+  
   后台地址：http://49.234.117.202:9528/
   
 5.后端的主要技术架构是：SpringBoot+SpringCloud+MyBatis-Plus+HttpClient+MySQL+Maven+POI+nginx
