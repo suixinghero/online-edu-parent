@@ -32,7 +32,7 @@
   
   后台地址：http://49.234.117.202:9528/
   
-5.后端的主要技术架构是：SpringBoot+SpringCloud+MyBatis-Plus+HttpClient+MySQL+Maven+POI+nginx+JDK1.8
+5.后端的主要技术架构是：SpringBoot+SpringCloud+MyBatis-Plus+HttpClient+MySQL+Maven+POI+nginx+JDK1.8+Docker
   
 6.前端的架构是：Node.js+Vue.js+element-ui+Nuxt+Echarts
 
