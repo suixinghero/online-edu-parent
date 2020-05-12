@@ -26,6 +26,8 @@
   
   online-edu-statistics:网站统计日数据相关的模块
   
+  online-edu-zuul:网关相关的模块
+  
   前台地址：http://49.234.117.202  或  www.suixinghero.cn
   
   后台地址：http://49.234.117.202:9528/
