@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.online.edu.mapper.CourseMapper">
+    <select id="selectCoursePublishVoById" resultType="com.online.edu.vo.CoursePublishVo">
+        select c.title,c.cover,c.lesson_num as lessonNum,
+        f.title as subjectLevelOne,s.title as subjectLevelTwo,
+        c.price,t.`name` as teacherName from edu_course c
+        INNER JOIN edu_teacher t on c.teacher_id = t.id
+        INNER JOIN edu_subject s on c.subject_id = s.id
+        INNER JOIN edu_subject f on s.parent_id = f.id
+        where c.id = #{id};
+    </select>
+    <select id="selectCourseWebVoById" resultType="com.online.edu.vo.CourseWebVo">
+        select c.id,c.title,c.price,c.lesson_num as lessonNum,c.cover,c.buy_count as buyCount,
+        c.view_count as viewCount,d.description,c.teacher_id as teacherId,t.name as teacherName,
+        t.intro,t.avatar,f.id as subjectLevelOneId,f.title as subjectLevelOne,c.subject_id as subjectLevelTwoId,
+        s.title as subjectLevelTwo from edu_course c
+        inner join edu_teacher t on c.teacher_id = t.id
+        inner join edu_course_description d on c.id = d.id
+        inner join edu_subject s on c.subject_id = s.id
+        inner join edu_subject f on s.parent_id = f.id
+        where c.id = #{id}
+    </select>
+</mapper>
